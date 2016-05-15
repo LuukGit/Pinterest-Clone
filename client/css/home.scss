@@ -1,4 +1,125 @@
+$headerFontSize: 30px;
+$topMargin: 20px;
+
 body {
     height: 100%;
     width: 100%;
+    background-color: #333;
+}
+
+#myNav {
+    width: 100%;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0px;
+
+    h3 {
+      font-size: $headerFontSize;
+      color: black;
+    }
+
+    .navbar-li {
+      width: 120px;
+      height: 63px;
+      text-align: center;
+    }
+
+    .navbar-li:hover {
+      background-color: #ddd;
+    }
+
+    a {
+      line-height: $headerFontSize;
+      font-size: 18px;
+      color: black;
+
+    }
+
+    .menu-item {
+        a {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+}
+
+#content {
+    width: 100%;
+}
+
+#recent-empty {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/********   Masonry    *********/
+.btn-success {
+    display: block;
+    width: 20%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: $topMargin;
+    box-shadow: 0 0 5px black;
+    font-weight: bold;
+}
+
+$imageColor: white;
+.my-gallery-class {
+    margin-top: $topMargin;
+    list-style-type: none;
+
+    #gallery-line{
+        width: 80%;
+        height: 1px;
+        background-color: white;
+    }
+
+    .image-element-class {
+        background-color: $imageColor;
+        text-align: center;
+        border: 1px solid $imageColor;
+        border-radius: 15px;
+        max-width: 18%;
+        box-shadow: 0 0 5px black;
+        padding: 0 30px 30px 30px;
+        margin: 5px;
+        img {
+            box-shadow: 0 0 2px black;
+            max-width: 100%;
+            max-height: 200px;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+
+        hr {
+            background-color: black;
+            height: 1px;
+        }
+        h3 {
+            max-width: 200px;
+            word-wrap: break-word;
+        }
+
+        .btn-primary {
+            margin-top: 35px;
+        }
+
+        .btn-default {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 0;
+            font-size: 20px;
+            background: transparent;
+            border: none !important;
+        }
+        .btn-default:focus {
+            outline:none;
+        }
+    }
 }

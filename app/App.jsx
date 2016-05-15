@@ -36,9 +36,9 @@ class App extends React.Component {
           return (
             <Router history={browserHistory}>
               <Route path="/" component={Main} user={this.state.user}>
-                <IndexRoute component={MyWall} onEnter={this.requireLogin} user={this.state.user} />
+                <IndexRoute component={MyWall} onEnter={this.requireLogin} />
                 <Route path="/recent" component={Recent} />
-                <Route path="/mywall" onEnter={this.requireLogin} component={MyWall}  user={this.state.user} />
+                <Route path="/mywall" onEnter={this.requireLogin} component={MyWall} />
               </Route>
             </Router>
           );

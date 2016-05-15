@@ -5,7 +5,8 @@ var Schema = mongoose.Schema;
 
 var Image = new Schema({
 	title: String,
-    URL: String
+    URL: String,
+	owner: String
 });
 
 module.exports = mongoose.model('Image', Image);
