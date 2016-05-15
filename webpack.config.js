@@ -1,7 +1,7 @@
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'client/js');
-var APP_DIR = path.resolve(__dirname, "app/components/");
+var APP_DIR = path.resolve(__dirname, "app/");
 
 var config = {
   entry: APP_DIR + '/App.jsx',
