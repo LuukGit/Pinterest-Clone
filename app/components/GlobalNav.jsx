@@ -14,7 +14,7 @@ class GlobalNav extends React.Component {
     }
 
     logout() {
-        window.location.href = "http://127.0.0.1:8080/logout";
+        window.location.href = "https://luuk-pinterest-clone.herokuapp.com/logout";
     }
 
     render() {
